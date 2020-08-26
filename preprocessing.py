@@ -20,7 +20,6 @@ def date_to_number(date):
 
 def load_one(path):
     # path의 txt 파일 데이터를 가져온다.
-    # 파일 데이터 형식은 d1, date여야 한다.
     with open(path, 'r', encoding='utf8') as f:
         d1 = f.read().split(' ')
 

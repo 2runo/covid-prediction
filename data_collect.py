@@ -6,6 +6,7 @@ import urllib.request
 import matplotlib.pyplot as plt
 import numpy as np
 from skimage.transform import resize
+import os
 
 
 def get_data(country):
@@ -86,6 +87,8 @@ for country in countries:
     result.append(cur_data)
 
     # 데이터 저장
+    if not os.path.isdir('data'):
+        os.mkdir('data')
     with open('data/%s_data.txt' % country, 'w', encoding='utf8') as f:
         f.write('\n'.join([' '.join(map(str, i)) for i in result]))
 

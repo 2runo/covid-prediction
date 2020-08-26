@@ -48,7 +48,7 @@ def load(directory='data'):
 
 def labeling(data, sight=25, y_n=1):
     # (sight개의 x, y_n개의 y) 쌍을 만든다.
-    # ex) f([1,2,3,4,5,6,7,8,9], sight=3) -> [ [[1,2,3],4], [[2,3,4],5], ..]
+    # ex) f([1,2,3,4,5,6,7,8,9], sight=3, y_n=1) -> [ [[1,2,3],[4]], [[2,3,4],[5]], ..]
     x, y = [], []
     for i in range(len(data) - sight - y_n + 1):
         x.append(data[i:sight+i])

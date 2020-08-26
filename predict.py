@@ -38,7 +38,7 @@ def load_korea_data():
 
 
 def get_dates(last_x):
-    # x에 해당하는 모든 날짜를 반환한다.
+    # x에 해당하는 40일  날짜를 반환한다.
     dates = []
     for day in range(0, last_x, 40):
         date = opt.START_DATE + datetime.timedelta(day)

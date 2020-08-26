@@ -9,7 +9,7 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3'
 tf.get_logger().setLevel('ERROR')
 
 # 데이터 가져오기
-xtrain, xtest, ytrain ,ytest = joblib.load('traintest.joblib')
+xtrain, xtest, ytrain, ytest = joblib.load('traintest.joblib')
 
 # 모델 가져오기
 model = build_model()
